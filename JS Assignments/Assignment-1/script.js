@@ -1,0 +1,12 @@
+let str = "Hello World";
+let num = 42;
+let bool = true;
+let undef;
+let obj = { name: "Naveen", age: 25 };
+let output = '';
+output += `String: "${str}" -> Type: ${typeof str}<br>`;
+output += `Number: ${num} -> Type: ${typeof num}<br>`;
+output += `Boolean: ${bool} -> Type: ${typeof bool}<br>`;
+output += `Undefined: ${undef} -> Type: ${typeof undef}<br>`;
+output += `Object: ${JSON.stringify(obj)} -> Type: ${typeof obj}<br>`;
+document.getElementById("output").innerHTML = output;
